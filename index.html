@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body class="min-h-screen flex flex-col">
+  <div id="app"></div>
+
+  <header class="theme-divider py-6 px-4 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-2">VOCÊ FOI CONVIDADO !</h1>
+    <p class="text-2xl md:text-3xl font-semibold mb-1">Murilo celebra <span class="">2 anos</span> 🦖</p>
+    <p class="text-2xl md:text-3xl font-semibold">Heitor celebra <span class="">9 anos</span> 🧊</p>
+</header>
+
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <div class="bg-white rounded-xl p-6 mb-8 text-center">
+      <h2 class="text-2xl font-bold mb-4">Temas Especiais</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="dino-theme p-4 rounded-lg">
+          <h3 class="text-xl font-bold">Dinossauros</h3>
+          <p>Para comemorar os 2 anos do Murilo!</p>
+        </div>
+        <div class="minecraft-theme p-4 rounded-lg">
+          <h3 class="text-xl font-bold">Minecraft</h3>
+          <p>Para comemorar os 9 anos do Heitor!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="grid md:grid-cols-2 gap-8 mb-12">
+      <!-- Murilo Card -->
+      <div id="murilo-card" class="flip-card w-full h-full">
+        <div class="flip-card-inner relative w-full h-full" style="height: 400px;">
+          <div
+            class="flip-card-front absolute w-full h-full dino-theme rounded-xl shadow-2xl overflow-hidden border-8 border-amber-300">
+            <div class="h-full flex flex-col">
+              <div class="h-1/2 relative overflow-hidden">
+                <img
+                  src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5ac111e1-3685-431b-aeac-86cd6cf6ba0b.png"
+                  alt="Parque jurássico com dinossauros coloridos e felizes, céu azul com nuvens fofas, paisagem infantil vibrante"
+                  class="w-full h-full object-cover">
+                <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-amber-200 to-transparent h-16"></div>
+              </div>
+              <div class="h-1/2 p-6 flex flex-col justify-center items-center text-center">
+                <h2 class="text-3xl font-bold mb-2">Murilo</h2>
+                <div class="text-5xl mb-4 bounce">🦖</div>
+                <p class="text-xl">Está completando <span class="text-2xl font-bold">2 anos</span>!</p>
+                <p class="mt-2">Tema: Dinossauros!</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flip-card-back absolute w-full h-full dino-theme rounded-xl shadow-2xl overflow-hidden border-8 border-amber-300 p-6">
+            <h3 class="text-2xl font-bold text-center mb-4">Detalhes da Festa</h3>
+            <div class="space-y-3">
+              <p><strong>DATA:</strong> 12/06/2025 @ 13h30</p>
+              <p><strong>LOCAL:</strong> Rua Cândido Rodrigues, 188 - São Vicente - Espaço Gourmet</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Heitor Card -->
+      <div id="heitor-card" class="flip-card w-full h-full">
+        <div class="flip-card-inner relative w-full h-full" style="height: 400px;">
+          <div
+            class="flip-card-front absolute w-full h-full minecraft-theme rounded-xl shadow-2xl overflow-hidden border-8 border-blue-300">
+            <div class="h-full flex flex-col">
+              <div class="h-1/2 relative overflow-hidden">
+                <img
+                  src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b6053e8b-625c-41ee-a604-b1f720f275aa.png"
+                  alt="Paisagem de Minecraft em pixel art com blocos de grama, árvores quadradas, montanhas e um sol quadrado no céu azul"
+                  class="w-full h-full object-cover">
+                <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-blue-200 to-transparent h-16"></div>
+              </div>
+              <div class="h-1/2 p-6 flex flex-col justify-center items-center text-center">
+                <h2 class="text-3xl font-bold mb-2">Heitor</h2>
+                <div class="text-5xl mb-4 creeper-walk">🧊</div>
+                <p class="text-xl">Está completando <span class="text-2xl font-bold">9 anos</span>!</p>
+                <p class="mt-2">Tema: Minecraft!</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flip-card-back absolute w-full h-full minecraft-theme rounded-xl shadow-2xl overflow-hidden border-8 border-blue-300 p-6 pixel-font">
+            <h3 class="text-2xl font-bold text-center mb-4">Detalhes da Festa</h3>
+            <div class="space-y-3">
+              <p><strong>DATA:</strong> 12/06/2025 @ 13h30</p>
+              <p><strong>LOCAL:</strong> Rua Cândido Rodrigues, 188 - São Vicente - Espaço Gourmet</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Information Section -->
+    <div class="bg-white rounded-xl shadow-xl p-8 mb-12">
+      <h2 class="text-3xl font-bold text-center mb-6">Informações Gerais</h2>
+      <div class="grid md:grid-cols-1 gap-8">
+        <div class="dino-theme p-6 rounded-lg">
+          <h3 class="text-2xl font-bold mb-4"></h3>
+          <ul class="list-disc pl-5 font-bold space-y-2">
+            <p>📅 Data: 12/06</p>
+            <p>⏰ Horário: 13:30:00</p>
+            <p>📍 Local: Rua Cândido Rodrigues, 188 - São Vicente - Espaço Gourmet</p>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="bg-white rounded-xl shadow-xl p-8 mb-12">
+      <h2 class="text-4xl font-bold text-center mb-6">Galeria de Fotos</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img
+          src="./src/img/01.jpg"
+          alt="Decoração de dinossauros para Murilo" class="rounded-lg">
+        <img
+          src="./src/img/02.jpg"
+          alt="Decoração de Minecraft para Heitor" class="rounded-lg">
+        <img
+          src="./src/img/03.jpg"
+          alt="Bolo de aniversário de 2 anos" class="rounded-lg">
+        <img
+          src="./src/img/04.jpg"
+          alt="Bolo de aniversário de 9 anos" class="rounded-lg">
+      </div>
+    </div>
+
+    <!-- Countdown -->
+    <div class="text-center py-8">
+      <h3 class="text-2xl font-bold mb-4">Contagem regressiva para a festa!</h3>
+      <div id="countdown" class="flex justify-center gap-4">
+        <div class="bg-white p-3 rounded-lg shadow-md w-20">
+          <div class="text-3xl font-bold" id="days">00</div>
+          <div class="text-sm">DIAS</div>
+        </div>
+        <div class="bg-white p-3 rounded-lg shadow-md w-20">
+          <div class="text-3xl font-bold" id="hours">00</div>
+          <div class="text-sm">HORAS</div>
+        </div>
+        <div class="bg-white p-3 rounded-lg shadow-md w-20">
+          <div class="text-3xl font-bold" id="minutes">00</div>
+          <div class="text-sm">MIN</div>
+        </div>
+        <div class="bg-white p-3 rounded-lg shadow-md w-20">
+          <div class="text-3xl font-bold" id="seconds">00</div>
+          <div class="text-sm">SEG</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="theme-divider py-6 px-4 text-center mt-auto">
+    <p class="font-bold">Aguardamos você para celebrar conosco!</p>
+  </footer>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
