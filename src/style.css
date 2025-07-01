@@ -1,6 +1,6 @@
-@import "tailwindcss";
-
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Press+Start+2P&display=swap');
+
+@import "tailwindcss";
 
 body {
     font-family: 'Fredoka One', cursive;
